@@ -1,0 +1,9 @@
+project: savantenvs/softethervpn
+target: fuzz_cfg
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_cfg/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_cfg
+    libfuzzer: true
+    timeout: 10

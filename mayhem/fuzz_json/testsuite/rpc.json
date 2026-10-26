@@ -1,0 +1,1 @@
+{"jsonrpc":"2.0","id":"rpc_call_id","method":"Test","params":{"IntValue_u32":1234,"Int64Value_u64":123456789012,"StrValue_str":"hello","UniStrValue_utf":"\u3042","Arr":[1,25,true,null,"x"],"Nested":{"a":{"b":[]}}}}
