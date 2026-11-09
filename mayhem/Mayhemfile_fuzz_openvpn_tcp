@@ -1,0 +1,10 @@
+project: savantenvs/softethervpn
+target: fuzz_openvpn_tcp-mined-22c602f
+# seed-from: https://app.mayhem.security/savantenvs/softethervpn/fuzz-openvpn
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_openvpn_tcp-mined-22c602f/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_openvpn_tcp
+    libfuzzer: true
+    timeout: 10
